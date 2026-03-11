@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Machine Loan Manager</title>
+</head>
+
+<body>
+<h1>Machine Loan Manager</h1>
+
+<input id="name" placeholder="Machine Name">
+<input id="serial" placeholder="Serial Number">
+<button onclick="addMachine()">Add Machine</button>
+
+<ul id="list"></ul>
+
+<script>
+async function loadMachines(){
+    const res = await fetch('/machines');
+    const data = await res.json();
+
+    const list = document.getElementById("list");
+    list.innerHTML = "";
+
+    data.forEach(m=>{
+        list.innerHTML += `<li>${m.name} - ${m.serial}</li>`;
+    });
+}
+
+async function addMachine(){
+    const name = document.getElementById("name").value;
+    const serial = document.getElementById("serial").value;
+
+    await fetch('/machines',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({name,serial})
+    });
+
+    loadMachines();
+}
+
+loadMachines();
+</script>
+
+</body>
+</html>
