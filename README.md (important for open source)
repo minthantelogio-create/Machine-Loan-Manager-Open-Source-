@@ -1,0 +1,26 @@
+# Machine Loan Manager
+
+A lightweight web app to track machine loans and reservations.
+
+## Features
+- Machine inventory
+- Loan tracking
+- Reservation management
+- Overdue alerts
+
+## Tech Stack
+- Node.js
+- Express
+- SQLite
+
+## Installation
+
+git clone https://github.com/yourname/machine-loan-manager
+
+cd machine-loan-manager
+
+npm install
+
+npm start
+
+Open http://localhost:3000
