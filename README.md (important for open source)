@@ -1,29 +1,14 @@
-Features
-- Add machines (name, serial number)
-- Loan machine to staff
-- Show current loans
-- Show overdue machines
-- Reservation list
-- Simple dashboard
-
-machine-loan-manager
-│
-├── server.js
-├── package.json
-├── README.md
-├── database.db
-└── public
-     └── index.html
-
 # Machine Loan Manager
 
-A lightweight web app to track machine loans and reservations.
+A lightweight web application to track machine loans, reservations,
+and overdue alerts for IT teams and equipment management.
 
 ## Features
-- Machine inventory
-- Loan tracking
-- Reservation management
+- Add machines
+- Track machine loans
+- Equipment reservation
 - Overdue alerts
+- Simple dashboard
 
 ## Tech Stack
 - Node.js
@@ -33,11 +18,8 @@ A lightweight web app to track machine loans and reservations.
 ## Installation
 
 git clone https://github.com/yourname/machine-loan-manager
-
 cd machine-loan-manager
-
 npm install
-
 npm start
 
 Open http://localhost:3000
