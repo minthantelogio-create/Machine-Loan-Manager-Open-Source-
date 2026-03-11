@@ -1,3 +1,20 @@
+Features
+- Add machines (name, serial number)
+- Loan machine to staff
+- Show current loans
+- Show overdue machines
+- Reservation list
+- Simple dashboard
+
+machine-loan-manager
+│
+├── server.js
+├── package.json
+├── README.md
+├── database.db
+└── public
+     └── index.html
+
 # Machine Loan Manager
 
 A lightweight web app to track machine loans and reservations.
